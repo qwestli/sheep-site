@@ -7,27 +7,18 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #5B7B58; /* Зеленый фон, как на вашем сайте */
+            background-color: #5B7B58; /* Зеленый фон */
             height: 100vh;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .sheep-container {
+            overflow: hidden; /* Прячем всё, что выходит за края */
             position: relative;
-            width: 100%;
-            height: 200px;
         }
 
         .sheep {
             position: absolute;
-            width: 120px; /* Размер овечки */
-            /* Ссылка на картинку овечки */
-            content: url('https://static.tildacdn.com/tild6630-3738-4635-a165-376435303864/sheep.png');
+            width: 150px;
+            top: 50%; /* Овечка будет ровно посередине экрана по высоте */
             
-            /* Анимация движения слева направо */
+            /* Анимация движения */
             animation: run 8s linear infinite;
         }
 
@@ -39,9 +30,8 @@
 </head>
 <body>
 
-    <div class="sheep-container">
-        <div class="sheep"></div>
-    </div>
+    <!-- Вставляем картинку овечки -->
+    <img src="https://cdn-icons-png.flaticon.com/512/1998/1998593.png" class="sheep" alt="Овечка">
 
 </body>
 </html>
