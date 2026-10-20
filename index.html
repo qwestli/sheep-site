@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Матча Бар Sheeps</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #5B7B58; /* Зеленый фон, как на вашем сайте */
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sheep-container {
+            position: relative;
+            width: 100%;
+            height: 200px;
+        }
+
+        .sheep {
+            position: absolute;
+            width: 120px; /* Размер овечки */
+            /* Ссылка на картинку овечки */
+            content: url('https://static.tildacdn.com/tild6630-3738-4635-a165-376435303864/sheep.png');
+            
+            /* Анимация движения слева направо */
+            animation: run 8s linear infinite;
+        }
+
+        @keyframes run {
+            0% { left: -150px; }
+            100% { left: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sheep-container">
+        <div class="sheep"></div>
+    </div>
+
+</body>
+</html>
